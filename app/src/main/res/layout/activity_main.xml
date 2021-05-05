@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculando_seu_imc"
+            android:textSize="@dimen/text_size_title_default"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_top_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:hint="@string/digite_seu_nome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMainTitle">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tieName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilWeight"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_default"
+            android:hint="@string/digite_o_seu_peso"
+            app:layout_constraintEnd_toEndOf="@id/tilName"
+            app:layout_constraintStart_toStartOf="@+id/tilName"
+            app:layout_constraintTop_toBottomOf="@+id/tilName">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tieWeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilHeight"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_default"
+            android:hint="@string/digite_a_sua_altura"
+            app:layout_constraintEnd_toEndOf="@id/tilName"
+            app:layout_constraintStart_toStartOf="@id/tilName"
+            app:layout_constraintTop_toBottomOf="@id/tilWeight">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tieHeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btCalculateImc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_default"
+            android:padding="@dimen/padding_button_default"
+            android:text="@string/ver_resultado"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/tilWeight"
+            app:layout_constraintStart_toStartOf="@+id/tilWeight"
+            app:layout_constraintTop_toBottomOf="@+id/tilHeight" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

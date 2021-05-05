@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CalculandoIMC</string>
+    <string name="calculando_seu_imc">Calculando seu IMC</string>
+    <string name="digite_seu_nome">Digite seu nome</string>
+    <string name="digite_o_seu_peso">Digite o seu peso</string>
+    <string name="digite_a_sua_altura">Digite a sua altura</string>
+    <string name="ver_resultado">Ver resultado</string>
+    <string name="joana_ferraz">Joana Ferraz</string>
+    <string name="description_person">Formada em Pedagogia pela UFSCAR – Universidade Federal de São Carlos. Atua na educação pública desde 2013. Estuda Jogos Digitais na FIAP, pois é apaixonada por tecnologia e jogos. Gosta de atuar na área de Design e Programação.</string>
+</resources>

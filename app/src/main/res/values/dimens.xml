@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_default">8dp</dimen>
+    <dimen name="margin_top_default">16dp</dimen>
+    <dimen name="text_size_title_default">28sp</dimen>
+    <dimen name="size_emoji_joana_main_widht">144dp</dimen>
+    <dimen name="size__emoji_joana_main_height">144dp</dimen>
+    <dimen name="margin_default_text_about">36dp</dimen>
+    <dimen name="margin_start_end_about">8dp</dimen>
+    <dimen name="text_size_about_default">16sp</dimen>
+    <dimen name="padding_button_default">12dp</dimen>
+</resources>

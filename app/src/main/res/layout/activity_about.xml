@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_secondary_variant"
+    tools:context=".AboutActivity">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/joana_ferraz"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_title_default"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewJoana"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageViewJoana"
+        android:layout_width="@dimen/size_emoji_joana_main_widht"
+        android:layout_height="@dimen/size__emoji_joana_main_height"
+        android:src="@drawable/joana"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+
+        />
+
+    <TextView
+        android:id="@+id/textViewAbout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginStart="@dimen/margin_start_end_about"
+        android:layout_marginTop="@dimen/margin_default_text_about"
+        android:layout_marginEnd="@dimen/margin_start_end_about"
+        android:text="@string/description_person"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_about_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewJoana"
+
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
